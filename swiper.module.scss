@@ -1,0 +1,59 @@
+.swiper {
+	max-width: 1200px; // set the value beteween 800 px - 1200 px
+	overflow: hidden;
+	&__cards_box {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		opacity: 0.9;
+		transition-property: transform;
+		transition-duration: 1s;
+	}
+
+	&__card_box {
+		max-width: 1500px;
+		transition-property: transform;
+		transition-duration: 1.5s;
+		img {
+			max-width: 300px;
+			height: auto;
+			object-fit: cover;
+			transition-property: opacity, transform;
+			transition-duration: 1s;
+		}
+	}
+	&__card_box_disactive {
+		transition-property: transform;
+		transition-duration: 2s;
+		transform: scale(0.4);
+	}
+
+	&__controls {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			color: rgb(255, 0, 0);
+			font-size: 3rem;
+			background-color: transparent;
+			padding: 1rem;
+			margin: 1rem;
+			cursor: pointer;
+			border: none;
+
+			transition: opacity 0.5s;
+		}
+	}
+	&__numbers {
+		font-size: 1.5rem;
+		color: white;
+	}
+
+	&__active {
+		opacity: 1;
+	}
+
+	&__disactive {
+		opacity: 0.3;
+	}
+}
